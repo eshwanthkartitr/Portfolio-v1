@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshwanth Karti T R | AI Developer & Researcher</title>
+    <meta name="description" content="AI Developer and Researcher specializing in WebGL, Machine Learning, and innovative tech solutions">
+    <script src="script.js" type="module" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <!-- WebGL Canvas - Covers entire page -->
+    <canvas id="canvas"></canvas>
+    
+    <!-- Controls -->
+    <div id="controls">
+        <button id="playButton">🎵 VIBE</button>
+    </div>
+    <div id="fps">FPS: 0</div>
+    
+    <!-- Custom cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="quote-container">
+            <div class="caption fade-in-up">Hi I am planning on</div>
+            <div class="quote glow-text">Building the Future</div>
+            <div class="author fade-in-left">One Algo at a Time</div>
+            <div class="author fade-in-right">Eshwanth Karti T R</div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">1600+</div>
+                <div class="stat-label">LeetCode Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8.44</div>
+                <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Cloud Badges</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <img class="profile-image"
+            src="https://lh3.googleusercontent.com/ogw/AF2bZyjsbqD1NdlCLZumkx2BzzDq5B0ViFwbFEQWW0zpv2VLz3k=s64-c-mo"
+            alt="Eshwanth Karti T R">
+        <div class="profile-info">
+            <p class="profile-name">Eshwanth Karti T R</p>
+            <p class="profile-twitter">
+                <a href="mailto:eshwanthkartitr@gmail.com" target="_blank">eshwanthkartitr@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Resume Section -->
+    <main id="resume">
+        <!-- Floating particles -->
+        <div class="resume-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Header Section -->
+        <section class="resume-section hero-section">
+            <div class="resume-header">
+                <h1 class="resume-title">Eshwanth Karti T R</h1>
+                <p class="subtitle">AI Developer & Researcher</p>
+                <p class="location">📍 Vellore, Tamil Nadu</p>
+                
+                <div class="contact-grid">
+                    <a href="tel:+918438967169" class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">+91 84389 67169</div>
+                    </a>
+                    <a href="mailto:eshwanthkartitr@gmail.com" class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">eshwanthkartitr@gmail.com</div>
+                    </a>
+                    <a href="https://linkedin.com/in/eshwanth-karti-tr" target="_blank" class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-text">LinkedIn</div>
+                    </a>
+                    <a href="https://github.com/eshwanthkartitr" target="_blank" class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div class="contact-text">GitHub</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="resume-section">
+            <h2>🎓 Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Amrita Vishwa Vidyapeetam</h3>
+                        <span class="education-duration">Expected Oct 2026</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="degree">B.Tech - Artificial Intelligence</p>
+                        <p class="location">Amrita School of AI, Coimbatore</p>
+                        <div class="gpa-highlight">
+                            <span class="gpa-label">CGPA:</span>
+                            <span class="gpa-value">8.44</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Sunbeam Hr Sec School</h3>
+                        <span class="education-duration">2021 - 2022</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="degree">Higher Secondary Certificate (HSC)</p>
+                        <p class="location">Vellore, Tamil Nadu</p>
+                        <div class="score-highlight">
+                            <span class="score-value">407/500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="resume-section">
+            <h2>💼 Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-badge">🔥</div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Summer Intern @ Cisco</h3>
+                            <span class="experience-duration">May 2025 - Present</span>
+                        </div>
+                        <div class="experience-role">Technical Intern I • Chennai, Tamil Nadu</div>
+                        <div class="experience-description">
+                            <p>Developing a query-based recommendation system for BEMS using A/B/C testing to compare different ideas. Built a custom pipeline combining dense retrieval, a two-step tag graph, and clustering.</p>
+                            <ul>
+                                <li>Created a 330-tag layer with keyword extraction methods</li>
+                                <li>Proposed system as the default escalation assistant</li>
+                                <li>Implemented advanced machine learning algorithms for building energy optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="resume-section">
+            <h2>🚀 Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">⚡</div>
+                        <div class="project-meta">
+                            <h3>Redis From Scratch</h3>
+                            <span class="project-duration">Jan 2025 – April 2025</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Developed a custom Redis server implementation in Go, featuring TCP connection handling and RESP protocol communication with core Redis operations.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Go</span>
+                        <span class="tech-badge">Shell</span>
+                        <span class="tech-badge">TCP</span>
+                        <span class="tech-badge">RESP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="link-icon">🔗</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏥</div>
+                        <div class="project-meta">
+                            <h3>Health Management System</h3>
+                            <span class="project-duration">July 2024 – Nov 2024</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Streamlined patient registration, appointment scheduling, and medical record management, improving efficiency by 40%. Features AI-based doctor selection.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Go</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">Azure</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="link-icon">🔗</span>
+                            <span>Backend</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span class="link-icon">🌐</span>
+                            <span>Frontend</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎭</div>
+                        <div class="project-meta">
+                            <h3>GAN-based Image Swapper</h3>
+                            <span class="project-duration">March 2023 – July 2023</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Created a GAN model for swapping faces in videos, achieving 94.5% similarity in expressions and lighting consistency. Minimized artifacts to 3.2%.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">GANs</span>
+                        <span class="tech-badge">Computer Vision</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="link-icon">🔗</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">♻️</div>
+                        <div class="project-meta">
+                            <h3>Waste Manager</h3>
+                            <span class="project-duration">April 2023 – June 2023</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Conducted comparative analysis of Xception, ResNet50, and VGG16 for waste identification, achieving 92% accuracy with Xception model.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="link-icon">🔗</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🚴</div>
+                        <div class="project-meta">
+                            <h3>Cycle Management System</h3>
+                            <span class="project-duration">Jan 2023 – July 2023</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Developed a campus bike-sharing system that reduced average travel time by 30%. Implemented barcode-based ID checks with 99.8% success rate.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">JavaFx</span>
+                        <span class="tech-badge">Barcode</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="link-icon">🔗</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="resume-section">
+            <h2>⚡ Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">💻</div>
+                        <h4>Programming Languages</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Dart</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🧠</div>
+                        <h4>AI & ML Frameworks</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">GANs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🌐</div>
+                        <h4>Web Technologies</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">🗄️</div>
+                        <h4>Databases</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">☁️</div>
+                        <h4>DevOps & Cloud</h4>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Azure</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Achievements Section -->
+        <section class="resume-section">
+            <h2>🏆 Research & Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card featured">
+                    <div class="achievement-badge">🥇</div>
+                    <div class="achievement-content">
+                        <h3>Best Paper Award (ICBSII 2025)</h3>
+                        <p>"Waves Don't Lie: Leveraging Test Time Training and Kolmogorov Arnold Networks for EEG Based Biometrics"</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-badge">⚡</div>
+                    <div class="achievement-content">
+                        <h3>LeetCode Expert</h3>
+                        <p>1600+ contest rating with 600+ problems solved</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-badge">☁️</div>
+                    <div class="achievement-content">
+                        <h3>Google Cloud Champion</h3>
+                        <p>20+ GCP skill badges earned</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-badge">🚀</div>
+                    <div class="achievement-content">
+                        <h3>Amazon ML Hackathon</h3>
+                        <p>Achieved 82nd place globally</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extracurricular Section -->
+        <section class="resume-section">
+            <h2>🌟 Leadership & Community</h2>
+            <div class="extracurricular-grid">
+                <div class="extracurricular-item">
+                    <div class="extracurricular-icon">🔧</div>
+                    <div class="extracurricular-content">
+                        <h3>Web Development Lead</h3>
+                        <p>Technical Team, IETE Coimbatore Chapter</p>
+                        <span class="extracurricular-duration">2024 – Present</span>
+                    </div>
+                </div>
+                <div class="extracurricular-item">
+                    <div class="extracurricular-icon">📚</div>
+                    <div class="extracurricular-content">
+                        <h3>Research Member</h3>
+                        <p>Arcane System Reading Group</p>
+                        <span class="extracurricular-duration">2023 – Present</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
